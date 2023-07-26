@@ -7,7 +7,7 @@ const ColorModeSwitch = () => {
 
 	// Animation variants for the Switch (marginLeft animation)
 	const switchVariants = {
-		unchecked: { marginLeft: "0px" },
+		unchecked: { marginLeft: "1px" },
 		checked: { marginLeft: "10px" },
 	};
 
@@ -20,7 +20,7 @@ const ColorModeSwitch = () => {
 				style={{
 					borderRadius: "20px",
 					width: "40px",
-					height: "20px",
+					height: "21px",
 					cursor: "pointer",
 					marginRight: "5px",
 
@@ -40,12 +40,12 @@ const ColorModeSwitch = () => {
 						borderRadius: "50%",
 						backgroundColor: "#FFF",
 						position: "absolute",
-						top: "2px",
+						top: "3px",
 						left: colorMode === "dark" ? "11.5px" : "2px",
 					}}
 				/>
 			</motion.div>
-			<Text>Dark Mode</Text>
+			<Text style={{ marginRight: "10px" }}>Dark Mode</Text>
 		</HStack>
 	);
 };
