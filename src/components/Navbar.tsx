@@ -4,11 +4,14 @@ import logo from "../assets/YDS.svg";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
-function Navbar() {
+interface Props {
+	onSearce: (searchText: string) => void;
+}
+function Navbar({onSearce}:Props) {
 	return (
 		<HStack justifyContent={"space-between"} padding={"10px"}>
 			<Image src={logo} boxSize={"60px"} />
-			<SearchInput />
+			<SearchInput onSearce={onSearce} />
 			<ColorModeSwitch />
 		</HStack>
 	);

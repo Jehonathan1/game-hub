@@ -1,5 +1,4 @@
-import { HStack, Switch, Text, useColorMode } from "@chakra-ui/react";
-import React from "react";
+import { HStack, Text, useColorMode } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const ColorModeSwitch = () => {
@@ -14,8 +13,6 @@ const ColorModeSwitch = () => {
 	return (
 		<HStack align="center">
 			<motion.div
-				// animate={colorMode === "dark" ? "checked" : "unchecked"}
-				// variants={switchVariants}
 				transition={{ type: "spring", stiffness: 500, damping: 50 }}
 				style={{
 					borderRadius: "20px",
