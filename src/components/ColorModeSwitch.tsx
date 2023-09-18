@@ -45,7 +45,7 @@ const ColorModeSwitch = () => {
 					}}
 				/>
 			</motion.div>
-			<Text style={{ marginRight: "10px" }}>Dark Mode</Text>
+			<Text whiteSpace='nowrap' style={{ marginRight: "10px" }}>Dark Mode</Text>
 		</HStack>
 	);
 };
