@@ -3,7 +3,7 @@ import axios from 'axios';
 
 module.exports = async (req, res) => {
   try {
-    const response = await axios.get('https://api.rawg.io/api', {
+    const response = await axios.get('https://api.rawg.io/api/platforms/lists/parents', {
         params: {...req.query,
             key: process.env.VITE_GAMES_API_KEY
           }
