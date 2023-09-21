@@ -7,7 +7,7 @@ dotenv.config(); // Load environment variables from .env file
 
 
 const app = express();
-const port = process.env.VITE_PORT; // You can choose another port if this one is in use
+const port = process.env.VITE_PORT || 3000; // You can choose another port if this one is in use
 // const port = 3000; // You can choose another port if this one is in use
 
 app.use(cors());
