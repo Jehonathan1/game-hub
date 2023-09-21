@@ -2,6 +2,9 @@
 import axios from "axios";
 
 const port = import.meta.env.VITE_PORT;
+// src/services/api-client.ts
+console.log('API Client Port:', port); // Log the port to the console
+
 
 export default axios.create({
     baseURL: `http://localhost:${port}/api`, // Pointing to the new Express server
