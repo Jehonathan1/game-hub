@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const port = import.meta.env.VITE_PORT;
+const port = import.meta.env.VITE_PORT || 3000;
 // src/services/api-client.ts
 console.log('API Client Port:', port); // Log the port to the console
 
